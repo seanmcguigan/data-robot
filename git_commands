@@ -1,0 +1,34 @@
+# merge dev into master - basic and not ideal
+git checkout master
+git merge dev
+
+# git rebase
+git checkout cool-feature 
+git rebase master # pull all changes in master and push your commits to the top(fix conflicts, git add <conflict file>, git rebase --continue)
+
+git checkout master
+git merge cool-feature
+
+# This time, since the topic branch has the same commits of master plus the commits 
+# with the new feature, the merge will be just a fast-forward.
+
+# tag + push tag
+git tag -a qa-v0.0.1 -m "tag test qa-v0.0.1"
+git push --follow-tags
+
+# delete tag + push
+git tag -d qa-v0.0.4 
+git push origin :refs/tags/qa-v0.0.4
+
+# show commit changes
+git show 004dba6
+
+# remove last commit
+git reset --soft HEAD^
+
+# discard local commits and sync with remote
+git reset --hard origin/master
+
+# delete remote and local branch
+git push origin --delete terradata-bucket-lifecycle-policy
+git branch -d terradata-bucket-lifecycle-policy
