@@ -1,5 +1,9 @@
-pipeline {
+    pipeline {
     agent any
+
+    environment {
+        USER_CREDS     = credentials('seanmc_user_creds')
+    }
 
     stages {
         stage('Build') {
