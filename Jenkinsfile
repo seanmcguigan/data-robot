@@ -9,6 +9,7 @@
         stage('Build') {
             steps {
                 echo 'Building..'
+                echo ' On brnch $env.BRANCH_NAME'
             }
         }
         stage('Test') {
