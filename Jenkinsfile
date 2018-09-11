@@ -9,7 +9,7 @@
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo ' On branch $env.BRANCH_NAME'
+                echo "On branch $env.BRANCH_NAME"
             }
         }
         stage('Test') {
