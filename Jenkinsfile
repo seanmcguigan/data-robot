@@ -7,6 +7,8 @@ pipeline {
 
     environment {
         USER_CREDS = credentials('seanmc_user_creds')
+        MY_FOO = "foo"
+
     }
 
     stages {
@@ -21,6 +23,7 @@ pipeline {
                 echo "With build number $env.BUILD_NUMBER"
                 echo "With build id $env.BUILD_ID"
                 echo "With node name $env.NODE_NAME"
+                echo "With my foo $env.MY_FOO"
 
                 """
             }
