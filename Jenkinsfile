@@ -8,7 +8,7 @@ pipeline {
     environment {
         USER_CREDS = credentials('seanmc_user_creds')
         MY_FOO = "foo"
-        HASH = $(git rev-parse HEAD)
+        HASH = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
     }
 
     stages {
