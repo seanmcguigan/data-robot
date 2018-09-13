@@ -8,7 +8,7 @@ pipeline {
     environment {
         USER_CREDS = credentials('seanmc_user_creds')
         MY_FOO = "foo"
-
+        HASH = $(git rev-parse HEAD)
     }
 
     stages {
@@ -24,6 +24,7 @@ pipeline {
                 echo "With build id $env.BUILD_ID"
                 echo "With node name $env.NODE_NAME"
                 echo "With my foo $env.MY_FOO"
+                echo "With git hash $env.HASH"
 
                 """
             }
