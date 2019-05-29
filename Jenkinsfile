@@ -1,6 +1,6 @@
 pipeline {
-    agent none
-
+    agent {label 'slaveOne'}
+    
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
     }
@@ -13,7 +13,6 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent { label 'slaveOne' }
             steps {
                 
                 echo "flag: ${params.userFlag}"
