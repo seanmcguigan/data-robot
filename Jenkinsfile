@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'slaveOne'}
+    agent any//{label 'slaveOne'}
     
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
