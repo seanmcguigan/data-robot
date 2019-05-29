@@ -2,7 +2,7 @@ pipeline {
     agent {label 'slaveOne'}
     
     parameters {
-        string(defaultValue: '', description: 'What environment?', name: 'Environment')
+        string(defaultValue: '', description: 'What environment?', name: 'environment')
         choice(choices: ['eu-west-1', 'eu-west-2'], description: 'What AWS region?', name: 'region')
     }
 
@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 
-                echo "flag: ${params.userFlag}"
+                echo "flag: ${params.environment}"
                 
                 sh """
                 echo 'Building..'
