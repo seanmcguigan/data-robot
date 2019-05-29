@@ -3,7 +3,11 @@ pipeline {
     
     parameters {
         string(defaultValue: '', description: 'What environment?', name: 'environment')
-        choice(choices: ['eu-west-1', 'eu-west-2'], description: 'What AWS region?', name: 'region')
+        choice(
+            choices: ['eu-west-1', 'eu-west-2'], 
+            description: 'What AWS region?', 
+            name: 'region'
+            )
     }
 
     environment {
@@ -32,8 +36,11 @@ pipeline {
             }
         }
         stage('Test') {
+            when {
+                expression { params.region == 'eu-west-1' }
+            }
             steps {
-                echo 'Testing..'
+                echo 'Testing..in eu-west-1'
             }
         }
         stage('Deploy') {
