@@ -1,0 +1,51 @@
+* [33m3a0addd[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m test
+* [33m2ba2ced[m fix foo dev
+* [33m83bfe53[m fix foo dev
+* [33m5b6fe21[m fix foo dev
+* [33mbe203d1[m fix foo dev
+* [33m8951cfc[m fix foo dev
+* [33mb047a0b[m fix foo dev
+* [33m022cb3a[m fix foo dev
+* [33m9dcd03f[m fix foo dev
+* [33ma279d6a[m fix foo dev
+*   [33mbf8138f[m Merge branch 'master' into develop
+[32m|[m[33m\[m  
+[32m|[m * [33m80695fa[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m foo
+[32m|[m * [33maf1c902[m deleting cruft
+[32m|[m * [33m96ecc40[m deleting cruft
+* [33m|[m [33mc3c0c94[m typo fix
+* [33m|[m [33m3b17e92[m typo fix
+* [33m|[m [33m99dfd52[m typo fix
+* [33m|[m [33mf7ca2d0[m typo fix
+* [33m|[m [33m2c0f04b[m typo fix
+* [33m|[m [33mee5a979[m typo fix
+* [33m|[m [33m6aeede3[m typo fix
+* [33m|[m [33m8dfef5f[m Adding branch VAR
+* [33m|[m [33mb8f98cd[m Adding Jenkinsfile
+[33m|[m[33m/[m  
+* [33mc60185f[m Adding Jenkinsfile
+* [33ma5eb64b[m foo
+* [33m8faee33[m Git pull --rebase test
+* [33m72ac8c3[m Git pull --rebase test
+* [33m11eef9b[m adding omega
+* [33m994fd64[m adding saturn, ammending delta
+* [33m79cc85f[m Adding tests
+* [33m7956fcb[m Adding test
+* [33m690096c[m Update config
+*   [33m0666de2[m Merge branch 'bug_fix_ppe-005' no ff
+[34m|[m[35m\[m  
+[34m|[m * [33ma0d474e[m adding the cat to gamma
+[34m|[m[34m/[m  
+* [33m2e84527[m adding the cat to gamma
+* [33m39cebe1[m [IE-3303] adding config
+* [33mb1ea5ab[m [IE-3303] Changed README in original repo
+* [33m40495c9[m [ECS-349] added to README
+* [33m0961e53[m [ECS-349] Moved alpha to lib
+* [33m1ef1b09[m [ECS-349] squash
+* [33mcb68b4f[m [ECS-349] adding new file
+* [33mcb0fcc8[m [ECS-349] edit beta and gamma on bugfix-PEP-1265
+* [33m29e4a17[m [ECS-349] adding gamma
+* [33mc423da3[m [ECS-349] edit beta on master
+* [33m99ad484[m [ECS-349] edit alpha on master
+* [33md6b3dee[m [ECS-349] initial commit
+* [33m937e717[m [ECS-349] Initial commit
